@@ -36,7 +36,7 @@ At **kavi.ai**, we believe that *Efficiency is the new Intelligence*. This works
 
 ## 📍 **Training Roadmap**
 <div align="center">
-  <img src="training_roadmap.png" width="800" alt="LLM Training Roadmap Infographic">
+  <img src="training_roadmap.svg" width="800" alt="LLM Training Roadmap Journey">
   <p><i>A visual guide to mastering the Open-Source LLM ecosystem.</i></p>
 </div>
 
