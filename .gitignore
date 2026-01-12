@@ -1,0 +1,7 @@
+# *.txt removed to allow requirements.txt
+*.log
+*.pyc
+wandb*.json
+*.wandb
+wandb
+checkpoint-*
