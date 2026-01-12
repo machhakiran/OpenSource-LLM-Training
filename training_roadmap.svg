@@ -1,102 +1,45 @@
-<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <!-- Branding Gradients -->
-    <linearGradient id="mainPathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" /> <!-- Blue -->
-      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" /> <!-- Purple -->
-      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" /> <!-- Orange -->
-    </linearGradient>
-    
-    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-      <feOffset dx="2" dy="4" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.3"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <style>
-      .milestone-title { font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #1e293b; }
-      .milestone-desc { font-family: 'Segoe UI', Roboto, Arial, sans-serif; font-size: 12px; fill: #64748b; }
-      .step-num { font-family: sans-serif; font-size: 14px; font-weight: 800; fill: white; text-anchor: middle; }
-    </style>
-  </defs>
-
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <!-- Background Layer -->
-  <rect width="800" height="600" fill="#f8fafc" rx="20"/>
+  <rect width="800" height="600" fill="#ffffff" rx="10"/>
 
-  <!-- The Journey Road -->
-  <path d="M 100 100 
-           C 400 100, 700 100, 700 250 
-           S 400 400, 100 400 
-           S 400 550, 700 550" 
-        fill="none" stroke="#e2e8f0" stroke-width="12" stroke-linecap="round"/>
-        
-  <path d="M 100 100 
-           C 400 100, 700 100, 700 250 
-           S 400 400, 100 400 
-           S 400 550, 700 550" 
-        fill="none" stroke="url(#mainPathGrad)" stroke-width="6" stroke-linecap="round" stroke-dasharray="10,15"/>
+  <!-- Branding Road Path -->
+  <path d="M 100 120 C 400 120, 700 120, 700 250 S 400 380, 100 380 S 400 520, 700 520" 
+        fill="none" stroke="#e2e8f0" stroke-width="20" stroke-linecap="round"/>
+  
+  <path d="M 100 120 C 400 120, 700 120, 700 250 S 400 380, 100 380 S 400 520, 700 520" 
+        fill="none" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-dasharray="10,15"/>
 
-  <!-- Arrows along the path -->
-  <polygon points="400,95 415,100 400,105" fill="#3b82f6" />
-  <polygon points="695,250 700,265 705,250" fill="#a855f7" />
-  <polygon points="415,405 400,400 415,395" fill="#a855f7" />
-  <polygon points="105,400 100,415 95,400" fill="#f97316" />
-  <polygon points="400,545 415,550 400,555" fill="#f97316" />
+  <!-- Milestone 1 -->
+  <circle cx="100" cy="120" r="15" fill="#3b82f6" stroke="#ffffff" stroke-width="4"/>
+  <text x="130" y="115" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">01 Foundations</text>
+  <text x="130" y="132" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b">Next Token Prediction</text>
 
-  <!-- Milestone 1: Foundations -->
-  <g transform="translate(100, 100)" filter="url(#dropShadow)">
-    <circle r="22" fill="#3b82f6"/>
-    <text y="5" class="step-num">01</text>
-    <text x="35" y="-5" class="milestone-title">Foundations</text>
-    <text x="35" y="12" class="milestone-desc">Next Token Prediction & Tokenization</text>
-  </g>
+  <!-- Milestone 2 -->
+  <circle cx="700" cy="180" r="15" fill="#6366f1" stroke="#ffffff" stroke-width="4"/>
+  <text x="670" y="175" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="end">02 SFT Mastery</text>
+  <text x="670" y="192" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b" text-anchor="end">Instruction Tuning</text>
 
-  <!-- Milestone 2: SFT -->
-  <g transform="translate(700, 150)" filter="url(#dropShadow)">
-    <circle r="22" fill="#6366f1"/>
-    <text y="5" class="step-num">02</text>
-    <text x="-160" y="-5" class="milestone-title" text-anchor="end">Instruction Mastery</text>
-    <text x="-160" y="12" class="milestone-desc" text-anchor="end">Supervised Fine-Tuning (SFT)</text>
-  </g>
+  <!-- Milestone 3 -->
+  <circle cx="700" cy="320" r="15" fill="#a855f7" stroke="#ffffff" stroke-width="4"/>
+  <text x="670" y="315" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="end">03 LoRA Efficiency</text>
+  <text x="670" y="332" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b" text-anchor="end">Parameter-Efficient Fine-Tuning</text>
 
-  <!-- Milestone 3: LoRA -->
-  <g transform="translate(700, 320)" filter="url(#dropShadow)">
-    <circle r="22" fill="#a855f7"/>
-    <text y="5" class="step-num">03</text>
-    <text x="-160" y="-5" class="milestone-title" text-anchor="end">Efficiency (LoRA)</text>
-    <text x="-160" y="12" class="milestone-desc" text-anchor="end">Parameter-Efficient Optimization</text>
-  </g>
+  <!-- Milestone 4 -->
+  <circle cx="100" cy="380" r="15" fill="#ec4899" stroke="#ffffff" stroke-width="4"/>
+  <text x="130" y="375" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">04 QLoRA Scaling</text>
+  <text x="130" y="392" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b">4-bit Quantization</text>
 
-  <!-- Milestone 4: QLoRA -->
-  <g transform="translate(100, 400)" filter="url(#dropShadow)">
-    <circle r="22" fill="#ec4899"/>
-    <text y="5" class="step-num">04</text>
-    <text x="35" y="-5" class="milestone-title">Scaling (QLoRA)</text>
-    <text x="35" y="12" class="milestone-desc">4-bit Quantized Fine-Tuning</text>
-  </g>
+  <!-- Milestone 5 -->
+  <circle cx="100" cy="480" r="15" fill="#f97316" stroke="#ffffff" stroke-width="4"/>
+  <text x="130" y="475" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b">05 DPO Alignment</text>
+  <text x="130" y="492" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b">Human Preference Alignment</text>
 
-  <!-- Milestone 5: DPO -->
-  <g transform="translate(100, 520)" filter="url(#dropShadow)">
-    <circle r="22" fill="#f97316"/>
-    <text y="5" class="step-num">05</text>
-    <text x="35" y="-5" class="milestone-title">Alignment (DPO)</text>
-    <text x="35" y="12" class="milestone-desc">Human Preference Optimization</text>
-  </g>
+  <!-- Milestone 6 -->
+  <circle cx="700" cy="520" r="15" fill="#fbbf24" stroke="#ffffff" stroke-width="4"/>
+  <text x="670" y="515" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="end">06 Acceleration</text>
+  <text x="670" y="532" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#64748b" text-anchor="end">Unsloth Nitro Training</text>
 
-  <!-- Milestone 6: Unsloth -->
-  <g transform="translate(700, 550)" filter="url(#dropShadow)">
-    <circle r="22" fill="#fbbf24"/>
-    <text y="5" class="step-num">06</text>
-    <text x="-160" y="-5" class="milestone-title" text-anchor="end">Acceleration</text>
-    <text x="-160" y="12" class="milestone-desc" text-anchor="end">Unsloth Nitro-Boosted Training</text>
-  </g>
-
-  <!-- Branding -->
-  <text x="400" y="50" font-family="Arial" font-size="24" font-weight="900" fill="#1e293b" text-anchor="middle">kavi.ai TRAINING JOURNEY</text>
+  <!-- Title -->
+  <text x="400" y="60" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" fill="#1e293b" text-anchor="middle">kavi.ai TRAINING ROADMAP</text>
+  <line x1="300" y1="75" x2="500" y2="75" stroke="#cbd5e1" stroke-width="2"/>
 </svg>
