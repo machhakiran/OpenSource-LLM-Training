@@ -19,6 +19,8 @@
 - [💎 The kavi.ai Philosophy](#-the-kaviai-philosophy)
 - [🏗 Training Curriculum](#-training-curriculum)
 - [🚀 Strategic Techniques & Enterprise Use Cases](#-strategic-techniques--enterprise-use-cases)
+- [📍 Training Roadmap](#-training-roadmap)
+- [Overview](#-overview)
 - [📚 Resource Library (Lecture Slides)](#-resource-library-lecture-slides)
 - [⚡ Rapid Deployment](#-rapid-deployment)
 
@@ -29,6 +31,14 @@ At **kavi.ai**, we believe that *Efficiency is the new Intelligence*. This works
 - **Parameter Efficiency**: Doing more with 1% of the weights.
 - **Hardware Agnostic Scaling**: Turning consumer GPUs into LLM factories.
 - **Human-Centric Alignment**: Ensuring AI agents remain helpful, honest, and harmless.
+
+---
+
+## 📍 **Training Roadmap**
+<div align="center">
+  <img src="training_roadmap.png" width="800" alt="LLM Training Roadmap Infographic">
+  <p><i>A visual guide to mastering the Open-Source LLM ecosystem.</i></p>
+</div>
 
 ---
 
